@@ -5,7 +5,7 @@ var config = {
   host: "localhost",
   database: "cooperStuff",
 
-  kidsmode : false
+  kidsmode : true
 }
 
 module.exports = config;

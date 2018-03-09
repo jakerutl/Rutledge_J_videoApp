@@ -1,13 +1,15 @@
 .bodyKid{
   background-color: lightblue;
   font-family: Helvetica, Arial, sans-serif;
-}
-
-.kidsBody{
-  background-color: blue;
   width: 960px;
   margin: 0 auto;
 }
+
+/* .kidsBody{
+  background-color: blue;
+  width: 960px;
+  margin: 0 auto;
+} */
 
 h1{
   color: white;
@@ -39,6 +41,7 @@ p{
   position: relative;
   display: inline-block;
   border:  solid white 1px;
+  margin-left: 50px;
 }
 
 .dropdown-content {
@@ -68,4 +71,29 @@ color: black;
 
 .dropdown:hover .dropbtn {
   background-color: #1c1c1c;
+}
+
+
+.posters{
+  width: 960px;
+  margin: 0 auto;
+.movies{
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  li{
+    width: 260px;
+    height: 420px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    float: left;
+    margin-top: 20px;
+    margin-right: 46px;
+    list-style: none;
+  }
+  img{
+    width: 260px;
+    cursor: pointer;
+  }
+}
 }

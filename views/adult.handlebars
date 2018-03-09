@@ -1,17 +1,18 @@
-<body class="bodyKid">
+<body class="body">
 <h1>{{ title }}</h1>
 
-<!-- <div class="kidsBody"> -->
 <div class="dropdown">
   <button class="dropbtn">Genre</button>
   <div class="dropdown-content">
+    <a href="#">Action</a>
     <a href="#">Comedy</a>
+    <a href="#">Horror</a>
     <a href="#">Romance</a>
     <a href="#">Romcom</a>
   </div>
 </div>
 <a class="switch" href="/">Switch User</a>
-<!-- </div> -->
+<!-- <a href="#">Switch Profiles</a> -->
 <h3>{{message}}</h3>
 <div class="posters">
 <ul class="movies">
@@ -20,9 +21,10 @@
       <h2>
         {{ movies_title}}
       </h2>
-      <a href="/kids/:id"><img src="./images/{{movies_cover}}" alt=""></a>
+      <img src="./images/{{movies_cover}}" alt="">
     </li>
   {{/each}}
 </ul>
+
 </div>
 </body>

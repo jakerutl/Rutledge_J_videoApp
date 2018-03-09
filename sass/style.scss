@@ -1,6 +1,5 @@
 .body{
   background-color: #141414;
-  // background-color: lightblue;
   font-family: Helvetica, Arial, sans-serif;
 
   h1{
@@ -12,7 +11,7 @@
   h3{
     color: white;
     margin-top: 50px;
-    text-align: center;
+    text-align: left;
   }
   p{
     color: white;
@@ -35,6 +34,7 @@
     position: relative;
     display: inline-block;
     border:  solid white 1px;
+    margin-left: 50px;
 }
 
 .dropdown-content {
@@ -64,5 +64,73 @@
 
 .dropdown:hover .dropbtn {
     background-color: #1c1c1c;
+}
+}
+
+.userOne img{
+  width: 250px;
+  height: 250px;
+  margin-right: 50px;
+  transition: 0.2s;
+  &:hover{
+    opacity: 0.8;
+  }
+}
+
+.userOne img:hover{
+    opacity: 0.8;
+  }
+
+
+.userTwo img{
+  width: 250px;
+  height: 250px;
+  transition: 0.2s;
+}
+
+.userTwo img:hover{
+    opacity: 0.8;
+  }
+
+.users{
+  padding-top: 150px;
+  width: 555px;
+  margin: 0 auto;
+}
+.switch{
+  float: right;
+  margin-right: 50px;
+  margin-top: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+h2{
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.posters{
+  width: 960px;
+  margin: 0 auto;
+.movies{
+  margin-top: 100px;
+  margin-bottom: 100px;
+
+  li{
+    width: 260px;
+    height: 420px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    float: left;
+    margin-top: 20px;
+    margin-right: 46px;
+    list-style: none;
+  }
+  img{
+    width: 260px;
+    cursor: pointer;
+  }
 }
 }

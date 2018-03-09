@@ -10,19 +10,13 @@
     <a href="#">Romcom</a>
   </div>
 </div>
-<a class="switch" href="/">Switch User</a>
+<a class="switch" href="javascript:history.go(-1)">Back</a>
 <!-- </div> -->
 <h3>{{message}}</h3>
-<div class="posters">
-<ul class="movies">
   {{#each movies}}
-    <li>
       <h2>
         {{ movies_title}}
-      </h2>
-      <a href="/kids/:id"><img src="./images/{{movies_cover}}" alt=""></a>
-    </li>
+        {{movies_storyline}}
+        <video src="./videos/{{movies_trailer}}" controls> </video>
   {{/each}}
-</ul>
-</div>
 </body>

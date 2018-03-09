@@ -1,22 +1,17 @@
-<body class="bodyKid">
+<body class="body">
 <h1>{{ title }}</h1>
 
 <!-- <div class="kidsBody"> -->
-<div class="dropdown">
-  <button class="dropbtn">Genre</button>
-  <div class="dropdown-content">
-    <a href="#">Comedy</a>
-    <a href="#">Romance</a>
-    <a href="#">Romcom</a>
-  </div>
+<a class="Back" href="javascript: window.history.go(-1)">Back</a>
+  <h2 class="title">{{trailers.movies_title}}</h2>
+
+<div class="TrailerPage">
+
+<video class="Trailers" controls autoplay>
+  <source src="/video/{{trailers.movies_trailer}}" type="video/mp4">
+</video>
+
+  <p> {{trailers.movies_storyline}}</p>
 </div>
-<a class="switch" href="javascript:history.go(-1)">Back</a>
-<!-- </div> -->
-<h3>{{message}}</h3>
-  {{#each movies}}
-      <h2>
-        {{ movies_title}}
-        {{movies_storyline}}
-        <video src="./videos/{{movies_trailer}}" controls> </video>
-  {{/each}}
+
 </body>
